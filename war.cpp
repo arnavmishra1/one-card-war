@@ -33,6 +33,7 @@ int main() {
 	cout << endl;
 
 	cout << "Shuffled Deck" << endl;
+	myDeck.shuffle();
 	myDeck.display();
 	cout << endl;
 
@@ -70,7 +71,7 @@ int main() {
 	}
 
 	cout << "------Final Stats------" << endl;
-	cout << "	" << p1 << " vs.	" << p2 << endl;
+	cout << "	" << p1 << "	vs.	" << p2 << endl;
 	cout << "Wins	" << p1wins << "		" << p2wins << endl;
 	cout << "Losses	" << p1losses << "		" << p2losses << endl;
 	cout << "Ties	" << ties << "		" << ties << endl;
