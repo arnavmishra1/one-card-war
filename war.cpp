@@ -20,8 +20,6 @@ int main() {
 	getline(cin, p2);
 	cout << endl;
 
-	cout << "minecraft";
-	
 	myDeck.display();
 	return 0;
 }
