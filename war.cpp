@@ -22,6 +22,8 @@ int main() {
 
 	//testing git again
 	cout << "hello";
+	cout << "hi";
+	cout << "howdy";
 	
 	myDeck.display();
 	return 0;
