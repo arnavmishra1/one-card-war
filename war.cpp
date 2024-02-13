@@ -16,7 +16,7 @@ int main() {
 
 	cout << "Enter the name of the first player: ";
 	getline(cin, p1);
-	cout << "\nEnter the name of the second player: ";
+	cout << "Enter the name of the second player: ";
 	getline(cin, p2);
 	cout << endl;
 
