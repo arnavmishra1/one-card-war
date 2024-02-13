@@ -9,8 +9,6 @@ using namespace std;
 
 class Deck {
 	private:
-		//vector<char> suits;
-		//vector<char> ranks;
 		vector<Card> myDeck;
 	public:
 		Deck();

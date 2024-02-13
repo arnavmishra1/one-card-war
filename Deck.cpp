@@ -19,6 +19,13 @@ Deck::Deck() {
 		}
 }
 
+Card Deck::deal() {
+	Card temp = myDeck[0];
+	myDeck.erase(myDeck.begin());
+	return temp;
+
+}
+
 void Deck::display()
 {
 	for (int i = 0; i < 4; i++)
@@ -34,4 +41,8 @@ void Deck::display()
 			}
 		}
 	}
-};
+}
+
+void Deck::shuffle() {
+	
+}
