@@ -19,11 +19,6 @@ int main() {
 	cout << "Enter the name of the second player: ";
 	getline(cin, p2);
 	cout << endl;
-
-	//testing git again
-	cout << "hello";
-	cout << "hi";
-	cout << "howdy";
 	
 	myDeck.display();
 	return 0;
