@@ -20,6 +20,8 @@ int main() {
 	getline(cin, p2);
 	cout << endl;
 
+	cout << "halo";
+
 	myDeck.display();
 	return 0;
 }
