@@ -11,8 +11,8 @@ using namespace std;
 
 Deck::Deck() {
 
-	char suits[4] = {'C','S','D','H'};
-	char ranks[13] = {'A','2','3','4','5','6','7','8','9','T','J','Q','K'};
+	suits = {'C','S','D','H'};
+	ranks = {'A','2','3','4','5','6','7','8','9','T','J','Q','K'};
 	
 	for (int i = 0; i < 4; i++)
 		{
