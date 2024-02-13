@@ -69,11 +69,11 @@ int main() {
 		counter++;
 	}
 
-	cout << "------Final Stats------";
-	cout << "	" << p1 << " vs. " << p2;
-	cout << "Wins	" << p1wins << "	" << p2wins;
-	cout << "Losses	" << p1losses << "	" << p2losses;
-	cout << "Ties	" << ties << "	" << ties;
+	cout << "------Final Stats------" << endl;
+	cout << "	" << p1 << " vs.	" << p2 << endl;
+	cout << "Wins	" << p1wins << "		" << p2wins << endl;
+	cout << "Losses	" << p1losses << "		" << p2losses << endl;
+	cout << "Ties	" << ties << "		" << ties << endl;
 
 	return 0;
 }
