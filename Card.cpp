@@ -1,33 +1,23 @@
 #include <iostream>
+#include "Card.h"
 
 using namespace std;
 
-// Card class
-class Card {
-	public:
-		char num;
-		char suit;
-		
-		Card() {
-			num = NULL;
-			suit = NULL;
-		}
-		Card(char n, char s) {
-			num = n;
-			suit = s;
-		}
+Card::Card(char r, char s) {
+	rank = r;
+	suit = s;
+}
 
-		void display() {
-			cout << num << suit;
-		}
+void Card::display() {
+	cout << rank << suit;
+}
 
-		int compare(Card other) {
-			if (num > other.num) {
-				return 1;
-			} else if (num == other.num) {
-				return 0;
-			} else {
-				return -1;
-			}
-		}
-};
+int Card::compare(Card other) {
+	if (rank > other.rank) {
+		return 1;
+	} else if (rank == other.rank) {
+		return 0;
+	} else {
+		return -1;
+	}
+}

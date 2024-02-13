@@ -1,42 +1,36 @@
 #include <iostream>
-#include "Card.cpp"
+#include "Card.h"
+#include "Deck.h"
 
 using namespace std;
 
-// Deck class
-class Deck {
-	public:
-		char cardNums[13] = {'1','2','3','4','5','6','7','8','9','T','J','Q','K'};
-		char suits[4] = {'C','S','D','H'};
-		Card fullDeck[52];
-	
-		Deck()
-		{
-			cout << "inside deck";
-			for (int i = 0; i < 4; i++)
-			{
-				for (int j = 0; j < 13; j++)
-				{
-					fullDeck[(i*13 + j)] = Card(cardNums[j], suits[i]);
-				}
-			}
-		}
-		
-		//Card deal() {
-		//}
+Deck::Deck() {
 
-		void display()
+	ranks = {'1','2','3','4','5','6','7','8','9','T','J','Q','K'};
+	suits = {'C','S','D','H'};
+	
+	for (int i = 0; i < 4; i++)
 		{
-			for (int i = 0; i < 4; i++)
+			for (int j = 0; j < 13; j++)
 			{
-				for (int j = 0; j < 13; j++)
-				{
-					if (j < 12) {
-						cout << fullDeck[(i*13 + j)].num << ", ";
-					} else {
-						cout << fullDeck[(i*13 + j)].num << "\n";
-					}
-				}
+				myDeck.push_back(Card(ranks[j], suits[i]));
 			}
 		}
+}
+
+void Deck::display()
+{
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; j < 13; j++)
+		{
+			if (j < 12) {
+				myDeck[(i*13 + j)].display();
+				cout << ", ";
+			} else {
+				myDeck[(i*13 + j)].display();
+				cout  << "\n";
+			}
+		}
+	}
 };
