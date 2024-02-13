@@ -20,7 +20,7 @@ int main() {
 	getline(cin, p2);
 	cout << endl;
 
-	//testing git
+	cout << "minecraft";
 	
 	myDeck.display();
 	return 0;
