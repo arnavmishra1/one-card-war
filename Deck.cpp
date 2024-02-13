@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Card.h"
 #include "Deck.h"
 
@@ -6,8 +7,8 @@ using namespace std;
 
 Deck::Deck() {
 
-	ranks = {'1','2','3','4','5','6','7','8','9','T','J','Q','K'};
-	suits = {'C','S','D','H'};
+	char suits[4] = {'C','S','D','H'};
+	char ranks[13] = {'1','2','3','4','5','6','7','8','9','T','J','Q','K'};
 	
 	for (int i = 0; i < 4; i++)
 		{
