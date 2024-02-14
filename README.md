@@ -1,4 +1,4 @@
-Hello! Play ~One Card War~ today!
+Hello! Play **One Card War** today!
 
 It's very simple. Just enter your name, and then your opponents name, then view the results of the game!
 
